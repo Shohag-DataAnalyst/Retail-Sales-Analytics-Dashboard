@@ -1,10 +1,18 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/SQL-PostgreSQL-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Power%20BI-DAX-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Data%20Modeling-Star%20Schema-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
+</p>
+
+---
+
 # Retail Sales Analytics Dashboard
 
 An end-to-end data analytics project using **SQL, PostgreSQL, DAX, and Power BI**.
 
 This project simulates the work of a junior data analyst at a retail company:  
 you design the schema, load raw CSV files into PostgreSQL, build views, create DAX measures, and deliver interactive dashboards in Power BI.
-
 
 ---
 
@@ -58,6 +66,53 @@ This project was designed to answer key business questions for a retail company.
 
 ---
 
+## 🧱 Dataset & Data Model
+
+The project is built on a simple retail star schema:
+
+### **Fact Tables**
+- **fact_sales** – one row per order line (date, customer, product, territory, quantity)
+- **returns_data** – product returns by date, territory, and product
+
+### **Dimension Tables**
+- **calendar** – full date table (year, quarter, month, weekdays, etc.)
+- **dim_customer** – customer demographics and income
+- **dim_product** – product details (SKU, name, price, cost, attributes)
+- **dim_product_subcategories** – product subcategories
+- **dim_product_categories** – product categories
+- **dim_territory** – region, country, continent
+
+### **Table Relationships**
+- fact_sales.order_date → calendar.calendar_date  
+- fact_sales.customer_key → dim_customer.customer_key  
+- fact_sales.product_key → dim_product.product_key  
+- fact_sales.territory_key → dim_territory.territory_key  
+- dim_product.product_subcategory_key → dim_product_subcategories.product_subcategory_key  
+- dim_product_subcategories.product_category_key → dim_product_categories.product_category_key  
+- returns_data.product_key → dim_product.product_key  
+- returns_data.territory_key → dim_territory.territory_key  
+- returns_data.return_date → calendar.calendar_date
+
+---
+
+## 📁 Project Structure
+
+```
+Retail-Sales-Analytics-Dashboard/
+│
+├── README.md                       # Full project documentation
+├── Retail-Sales-Analytics-Dashboard.pbix   # Final Power BI dashboard
+│
+├── schema.sql                      # SQL script to create all dimension & fact tables
+├── view_vw_sales.sql               # SQL view used for Power BI data modeling
+│
+└── Screenshots/                    # Dashboard page images
+    ├── Page1_ExecutiveSummary.png
+    ├── Page2_SalesTrends.png
+    ├── Page3_ProductInsights.png
+    └── Page4_ReturnsAnalysis.png
+```
+---
 ## 📊 Dashboards Included  
 ### **1️⃣ Executive Summary**
 - Total Revenue  
@@ -141,4 +196,3 @@ Return rate performance and profitability vs return rate.
 ![Returns Analysis](Screenshots/Page4_ReturnsAnalysis.png)
 
 ---
-
