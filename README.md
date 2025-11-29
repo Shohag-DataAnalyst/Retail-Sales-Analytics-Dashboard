@@ -100,36 +100,40 @@ VAR PrevRevenue =
 RETURN
 DIVIDE(CurrRevenue - PrevRevenue, PrevRevenue)
 
+```
+
 ---
 
-## 📊 Dashboard Screenshots
+## 📸 Dashboard Screenshots  
+Here are the key pages from the Power BI dashboard included in this project.
 
-Below are the key pages from the Power BI dashboard included in this project.
+---
 
-### **1️⃣ Executive Summary**
-High-level KPIs and overview of total revenue, customer trends, and overall business performance.
+### 📊 1️⃣ Executive Summary
+High-level KPIs and overview of revenue, profitability, and customer trends.
 
 ![Executive Summary](Screenshots/Page1_ExecutiveSummary.png)
 
 ---
 
-### **2️⃣ Sales Trends**
-Monthly and yearly revenue trends, moving averages, YoY performance, and category-level filtering.
+### 📈 2️⃣ Sales Trends
+Monthly + yearly revenue trends, moving averages, and YoY analysis.
 
 ![Sales Trends](Screenshots/Page2_SalesTrends.png)
 
 ---
 
-### **3️⃣ Product Insights**
-Top 10 products by revenue and gross profit, category/subcategory filtering, and product-level details.
+### 🛒 3️⃣ Product Insights
+Top products by revenue, gross profit, and category performance.
 
 ![Product Insights](Screenshots/Page3_ProductInsights.png)
 
 ---
 
-### **4️⃣ Returns Analysis**
-Return rate by category, product-level return behavior, and profitability vs return rate analysis.
+### 🔄 4️⃣ Returns Analysis
+Return rate performance and profitability vs return rate.
 
 ![Returns Analysis](Screenshots/Page4_ReturnsAnalysis.png)
 
 ---
+
