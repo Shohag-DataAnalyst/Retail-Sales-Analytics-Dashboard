@@ -1,5 +1,10 @@
-# Retail Sales Analytics Dashboard  
+# Retail Sales Analytics Dashboard
+
 An end-to-end data analytics project using **SQL, PostgreSQL, DAX, and Power BI**.
+
+This project simulates the work of a junior data analyst at a retail company:  
+you design the schema, load raw CSV files into PostgreSQL, build views, create DAX measures, and deliver interactive dashboards in Power BI.
+
 
 ---
 
