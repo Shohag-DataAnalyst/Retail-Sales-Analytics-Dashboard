@@ -100,18 +100,20 @@ The project is built on a simple retail star schema:
 ```
 Retail-Sales-Analytics-Dashboard/
 │
-├── README.md                       # Full project documentation
+├── README.md                               # Full project documentation
 ├── Retail-Sales-Analytics-Dashboard.pbix   # Final Power BI dashboard
 │
-├── schema.sql                      # SQL script to create all dimension & fact tables
-├── view_vw_sales.sql               # SQL view used for Power BI data modeling
+├── schema.sql                              # SQL script: creates dimension & fact tables
+├── vw_sales.sql                            # SQL view used by Power BI
+├── analysis_queries.sql                    # Example analysis queries used in SQL exploration
 │
-└── Screenshots/                    # Dashboard page images
+└── Screenshots/                            # Dashboard images
     ├── Page1_ExecutiveSummary.png
     ├── Page2_SalesTrends.png
     ├── Page3_ProductInsights.png
     └── Page4_ReturnsAnalysis.png
 ```
+
 ---
 ## 📊 Dashboards Included  
 ### **1️⃣ Executive Summary**
