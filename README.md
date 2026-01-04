@@ -27,7 +27,7 @@ The goal was to build a complete, end-to-end analytics workflow including:
 
 ---
 
-## 📌 Business Questions Answered
+## ❓ Business Questions Answered
 
 This project was designed to answer key business questions for a retail company.
 
