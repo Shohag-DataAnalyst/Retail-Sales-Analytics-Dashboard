@@ -18,7 +18,7 @@ you design the schema, load raw CSV files into PostgreSQL, build views, create D
 
 ## 🔗 Live Interactive Dashboard
 👉 **View the live Power BI dashboard (no login required):**  
-[Click Here](https://app.powerbi.com/view?r=eyJrIjoiYjdjMWZkMjUtOWM3Ny00NmJhLTliYWQtOWViYzUxYzMyZTQzIiwidCI6IjY5MDRhYjJkLTlhZjQtNDNlOS05ODlmLTY1Mzg1NWEyODcyYSIsImMiOjEwfQ%3D%3D)
+👉 https://datalel.com
 
 ---
 
